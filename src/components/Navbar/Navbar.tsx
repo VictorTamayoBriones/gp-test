@@ -6,7 +6,7 @@ export interface NavbarInterface {}
 
 const Navbar: React.FC<NavbarInterface> = () => {
 	return(
-        <AppBar position="fixed">
+        <AppBar position="fixed" >
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Gentleman Programin React Test
