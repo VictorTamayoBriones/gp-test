@@ -32,18 +32,16 @@ const Home: React.FC<HomeInterface> = () => {
 	]
 
 	return(
-		<div className="table-container">
-			<DataGrid  
-				rows={People}
-				columns	={columns}
-				disableColumnSelector
-				disableSelectionOnClick
-				autoHeight
-				pageSize={ pageSize }
-				rowsPerPageOptions={[pageSize]}
-				getRowId={(row: any) => row.id }
-			/>
-		</div>
+		<DataGrid  
+			rows={People}
+			columns	={columns}
+			disableColumnSelector
+			disableSelectionOnClick
+			autoHeight
+			pageSize={ pageSize }
+			rowsPerPageOptions={[pageSize]}
+			getRowId={(row: any) => row.id }
+		/>
 	);
 };
 
